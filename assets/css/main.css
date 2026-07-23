@@ -90,6 +90,7 @@ section { padding-left: var(--edge); padding-right: var(--edge); max-width: var(
 
 /* ---------- Hero ---------- */
 .hero {
+  position: relative;
   min-height: calc(100dvh - 66px);
   display: flex;
   flex-direction: column;
@@ -98,6 +99,18 @@ section { padding-left: var(--edge); padding-right: var(--edge); max-width: var(
   padding-top: clamp(48px, 8vh, 96px);
   padding-bottom: clamp(40px, 7vh, 80px);
 }
+/* Live creative-coding background: sits behind the hero copy, dim by design. */
+#hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero > .tag,
+.hero > h1,
+.hero > .hero-foot { position: relative; z-index: 1; }
 .hero h1 {
   font-family: var(--display);
   font-weight: 800;
