@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="NYU VioletLab">
+  <rect width="100" height="100" rx="18" fill="#4a0d8c"/>
+  <!-- pink L: vertical stem + foot -->
+  <rect x="45" y="24" width="10" height="49" fill="#ff54c0"/>
+  <rect x="52" y="63" width="29" height="10" fill="#ff54c0"/>
+  <!-- white V over the top -->
+  <polygon points="24,22 34,22 53,74 43,74" fill="#ffffff"/>
+  <polygon points="76,22 66,22 47,74 57,74" fill="#ffffff"/>
+</svg>

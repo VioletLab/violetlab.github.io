@@ -1,0 +1,143 @@
+<!--
+  NYU VioletLab - homepage
+  ------------------------------------------------------------------
+  PUBLIC site + PUBLIC repo. Before every push:
+    - No secrets / API keys / .env
+    - No member PII or the Discord roster (public links only)
+    - No internal strategy docs; no comparisons to other clubs
+    - No personal/company email on this site
+  ------------------------------------------------------------------
+  Design: stark editorial. Near-black canvas, one violet accent,
+  Bricolage Grotesque display + Space Mono labels. Asymmetric,
+  type-forward, restrained motion. Static by choice. No footer.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYU VioletLab: for the ones who love to build</title>
+  <meta name="description" content="NYU VioletLab is an independent, student-run community for people who love to build. Recurring hackathons for experienced hackers and first-timers. Born at Tandon, open to every builder at NYU." />
+  <meta property="og:title" content="NYU VioletLab" />
+  <meta property="og:description" content="A student-run community for people who love to build. Recurring hackathons for hackers and first-timers alike." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="NYU VioletLab home">
+      <img class="mark" src="favicon.svg" alt="" width="30" height="30" />
+      <span class="brand-txt">NYU VioletLab</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#join" class="nav-cta">Join</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="tag reveal">[ NYU VioletLab ]</p>
+      <h1 class="reveal">For the ones<br />who love to<br /><em>build.</em></h1>
+      <div class="hero-foot">
+        <p class="lede reveal">
+          An independent, student-run community at NYU. Recurring hackathons for
+          seasoned hackers and first-timers alike. Born at Tandon, open to every builder at NYU.
+        </p>
+        <div class="cta reveal">
+          <a class="btn" href="https://discord.gg/Ad48RpANNG">Join the Discord</a>
+          <a class="lnk" href="https://github.com/VioletLab">GitHub<span class="arr"> ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <p class="tag reveal">[ About ]</p>
+      <p class="statement reveal">
+        Explore a new idea, join a team, or keep pushing a project you already love.
+        VioletLab is the room where it actually gets made. <span class="hl">A place for
+        builders and designers to experiment and ship things they're proud of.</span>
+      </p>
+      <p class="statement small reveal">No membership. No gatekeeping. If you want to build, you belong here.</p>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="programs">
+      <p class="tag reveal">[ Programs ]</p>
+      <ol class="rows">
+        <li class="row reveal">
+          <span class="idx">01</span>
+          <h3>Mini hackathons</h3>
+          <p>Fast two-hour builds to get the reps in. Low stakes, high energy, make something by the time it's over.</p>
+        </li>
+        <li class="row reveal">
+          <span class="idx">02</span>
+          <h3>Hack Day</h3>
+          <p>Our north star. A full weekend hackathon, nine to twelve hours, that we're working toward running with Major League Hacking.</p>
+        </li>
+        <li class="row reveal">
+          <span class="idx">03</span>
+          <h3>The open org</h3>
+          <p>Everything made here lives in the open on GitHub. Explore an idea, join a team, or continue an existing project.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ETHOS -->
+    <section class="ethos">
+      <h2 class="reveal">Every session ends with something <em>real.</em></h2>
+      <p class="reveal">A repo, a demo, a thing that runs. For first-timers and seasoned hackers alike. You leave holding what you made.</p>
+    </section>
+
+    <!-- BUILD LOG -->
+    <section id="build" class="build">
+      <p class="tag reveal">[ Build Log ]</p>
+      <a class="build-link reveal" href="https://github.com/VioletLab">
+        <span class="build-h">Everything we make is open.</span>
+        <span class="build-sub">Browse the GitHub org <span class="arr">↗</span></span>
+      </a>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join" class="join">
+      <p class="tag reveal">[ Join · Fall 2026 ]</p>
+      <h2 class="reveal">Come build<br />with us!</h2>
+      <p class="reveal">Jump in the Discord, show up to a hackathon, and make something with people who actually finish.</p>
+      <div class="cta reveal">
+        <a class="btn" href="https://discord.gg/Ad48RpANNG">Join the Discord</a>
+        <a class="lnk" href="https://www.linkedin.com/company/violetlab/">LinkedIn<span class="arr"> ↗</span></a>
+        <a class="lnk" href="https://github.com/VioletLab">GitHub<span class="arr"> ↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach(function (e) { e.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
+</body>
+</html>
