@@ -1,23 +1,7 @@
-/* NYU VioletLab - stark editorial. Near-black canvas, one hot-pink accent
-   (from the logo), Bricolage Grotesque display + Space Mono labels.
-   Single accent locked to --accent. Sharp shapes, buttons 4px. No em-dashes. */
-
-:root {
-  --bg: #0b0810;          /* near-black, faint purple undertone */
-  --bg-2: #130c1c;
-  --ink: #f5f2f8;
-  --muted: #9d93aa;
-  --line: rgba(255, 255, 255, 0.10);
-  --line-strong: rgba(255, 255, 255, 0.20);
-  --violet: #a855f7;      /* primary accent, brighter sibling of the logo purple */
-  --violet-deep: #7c3aed; /* button fills, carries white text at AA */
-  --pink: #ff54c0;        /* secondary pop, the L in the logo */
-  --display: "Bricolage Grotesque", system-ui, sans-serif;
-  --mono: "Space Mono", ui-monospace, monospace;
-  --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
-  --edge: clamp(20px, 6vw, 96px);
-  --max: 1280px;
-}
+/* NYU VioletLab - layout + components.
+   Stark editorial. Violet primary accent, pink secondary pop.
+   Bricolage Grotesque display + Space Mono labels. No em-dashes.
+   Tokens (colors, fonts, spacing) live in tokens.css. */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }

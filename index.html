@@ -22,18 +22,19 @@
   <meta property="og:description" content="A student-run community for people who love to build. Recurring hackathons for hackers and first-timers alike." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0a0a0c" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
 
   <header class="nav">
     <a class="brand" href="#top" aria-label="NYU VioletLab home">
-      <img class="mark" src="favicon.svg" alt="" width="30" height="30" />
+      <img class="mark" src="assets/img/mark.svg" alt="" width="30" height="30" />
       <span class="brand-txt">NYU VioletLab</span>
     </a>
     <nav class="nav-links">
@@ -123,21 +124,6 @@
 
   </main>
 
-  <script>
-    (function () {
-      var els = document.querySelectorAll('.reveal');
-      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduce || !('IntersectionObserver' in window)) {
-        els.forEach(function (e) { e.classList.add('in'); });
-        return;
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-        });
-      }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
-      els.forEach(function (e) { io.observe(e); });
-    })();
-  </script>
+  <script src="assets/js/reveal.js" defer></script>
 </body>
 </html>
