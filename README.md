@@ -1,6 +1,6 @@
-# NYU VioletLab
+# VioletLab
 
-The website for NYU VioletLab, an independent, student-run community for people who love to build. Recurring hackathons for experienced hackers and first-timers. Born at Tandon, open to every builder at NYU.
+The website for VioletLab, an independent, student-run community for people who love to build. Recurring hackathons for experienced hackers and first-timers. Born at Tandon, open to everyone who wants to build.
 
 Live at **https://violetlab.github.io**
 
