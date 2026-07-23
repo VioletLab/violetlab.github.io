@@ -43,8 +43,3 @@ Then visit http://localhost:8000
 ## Deploy
 
 Push to `main`. GitHub Pages redeploys automatically (Settings -> Pages -> Deploy from a branch -> `main` / root).
-
-## House rules
-
-- No secrets, no member PII, no personal emails in this repo (it is public).
-- No comparisons to other clubs in the copy. Positive self-definition only.
